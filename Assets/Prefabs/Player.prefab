@@ -161,6 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   total_hp: 100
+  healthBar: {fileID: 821991224871166597, guid: c82f2507170ccd442a2f329a03cc13c4, type: 3}
 --- !u!61 &6516929016431723147
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -200,7 +201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Projetil: {fileID: 9109454160590960889, guid: 7494b636408461441a98322bdff228e5, type: 3}
-  attackPoint: {fileID: 0}
+  attackPoint: {fileID: 2425539087765209239, guid: f611271254d980846b324f7e6e04eff7, type: 3}
   attackRange: 0.5
   enemyLayers:
     serializedVersion: 2

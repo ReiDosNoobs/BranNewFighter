@@ -40,16 +40,16 @@ public class AttackEnemy : MonoBehaviour
 
     void PreventleavingScreen()
     {
-        if (transform.position.x <= -8.54f || transform.position.x >= 8.54f)
+        if (transform.position.x <= -8.0f || transform.position.x >= 65.0f)
         {
-            float xPos = Mathf.Clamp(transform.position.x, -8.54f, 8.54f);
+            float xPos = Mathf.Clamp(transform.position.x, -8.0f, 65.0f);
 
             transform.position = new Vector3(xPos, transform.position.y, transform.position.z);
         }
 
-        if (transform.position.y <= -3.9f || transform.position.y >= -0.5f)
+        if (transform.position.y <= -5.5f || transform.position.y >= -0.6f)
         {
-            float yPos = Mathf.Clamp(transform.position.y, -3.9f, -0.5f);
+            float yPos = Mathf.Clamp(transform.position.y, -5.5f, -0.6f);
 
             transform.position = new Vector3(transform.position.x, yPos, transform.position.z);
         }

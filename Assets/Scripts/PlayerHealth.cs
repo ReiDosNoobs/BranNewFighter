@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int total_hp = 100;
+    public int total_hp = 5000;
     int current_hp;
 
     public HealthBar healthBar;
@@ -42,7 +42,7 @@ public class PlayerHealth : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
 
-        SceneManager.LoadScene("menu");
+        SceneManager.LoadScene("GameOver");
 
     }
 }

@@ -155,6 +155,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   total_hp: 100
+  valor: 0
+  valor_ini: 50
+  valor_ini_2: 100
   animator: {fileID: 793686541988216971}
 --- !u!114 &793686541988216969
 MonoBehaviour:

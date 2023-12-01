@@ -23,7 +23,6 @@ public class Projetil : MonoBehaviour
         {
             Destroy(outro.gameObject);
             Destroy(this.gameObject);
-            ptScript.pontos+= 10;
         }
     }
 

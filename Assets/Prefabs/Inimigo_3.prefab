@@ -42,11 +42,11 @@ GameObject:
   - component: {fileID: 793686541988216973}
   - component: {fileID: 793686541988216972}
   - component: {fileID: 793686541988216971}
-  - component: {fileID: 793686541988216970}
   - component: {fileID: 793686541988216969}
   - component: {fileID: 793686541988216968}
   - component: {fileID: 793686541988216975}
   - component: {fileID: 793686541988216974}
+  - component: {fileID: 1271765410383058650}
   m_Layer: 3
   m_Name: Inimigo_3
   m_TagString: Untagged
@@ -142,20 +142,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &793686541988216970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793686541988217079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a4f92a434919874996a9bf2438dc3ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  total_hp: 100
-  animator: {fileID: 793686541988216971}
 --- !u!114 &793686541988216969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,3 +222,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1271765410383058650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793686541988217079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561ac31e411647b409cf89219cfa2b11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  total_hp: 200
+  valor: 0
+  valor_ini: 50
+  valor_ini_2: 100
+  animator: {fileID: 793686541988216971}

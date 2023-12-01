@@ -14,8 +14,8 @@ public class PlayerImput : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
 
-    public int attack_damage = 20;
-    public float attack_rate = 2f;
+    public int attack_damage = 30;
+    public float attack_rate = 4f;
     float next_attack_time = 0f;
 
     public Animator animator;
@@ -61,10 +61,21 @@ public class PlayerImput : MonoBehaviour
         animator.SetTrigger("Attack");
 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-        
-        foreach(Collider2D enemy in hitEnemies)
+
+        foreach (Collider2D enemy in hitEnemies)
         {
+
             enemy.GetComponent<Inimigo>().take_damage(attack_damage);
+        }
+        foreach (Collider2D enemy2 in hitEnemies)
+        {
+
+            enemy2.GetComponent<Inimigo_2>().take_damage(attack_damage);
+        }
+        foreach (Collider2D enemy3 in hitEnemies)
+        {
+
+            enemy3.GetComponent<Inimigo_3>().take_damage(attack_damage);
         }
     }
 

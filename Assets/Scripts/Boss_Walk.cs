@@ -38,7 +38,7 @@ public class Boss_Walk : StateMachineBehaviour
             rb.MovePosition(opPos);
             
             
-            if (Vector2.Distance(player.position, rb.position) >= 7)
+            if (Vector2.Distance(player.position, rb.position) >= 4)
              {
                  countAttack = 0;
              }

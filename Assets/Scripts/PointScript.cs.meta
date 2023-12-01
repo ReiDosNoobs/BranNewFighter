@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: db0404d6c9baaad42ad86db044f369f7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - pontosUI: {fileID: 1495241480093443676, guid: 235e2bcafcb4b614d8b5883a94ad810f, type: 3}
+  - recordeUI: {fileID: 4857783871539888832, guid: cbe12a05bebf133429c272e93684266e, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

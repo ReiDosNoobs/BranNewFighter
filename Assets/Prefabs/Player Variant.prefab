@@ -87,11 +87,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6308693855638725169, guid: d0b0a51a4554e4b4ea4a181d8aefe026, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 6308693855638725169, guid: d0b0a51a4554e4b4ea4a181d8aefe026, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 6308693855638725169, guid: d0b0a51a4554e4b4ea4a181d8aefe026, type: 3}
       propertyPath: m_LocalScale.z
@@ -162,8 +162,16 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6308693855638725174, guid: d0b0a51a4554e4b4ea4a181d8aefe026, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1351682020, guid: 0214cb63ad6d32a40915c5c33430c327, type: 3}
+    - target: {fileID: 6308693855638725174, guid: d0b0a51a4554e4b4ea4a181d8aefe026, type: 3}
       propertyPath: m_SortingLayer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308693855638725174, guid: d0b0a51a4554e4b4ea4a181d8aefe026, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6308693855638725174, guid: d0b0a51a4554e4b4ea4a181d8aefe026, type: 3}
       propertyPath: m_SortingLayerID
@@ -181,6 +189,11 @@ PrefabInstance:
 --- !u!4 &2674366899298877042 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6308693855638725169, guid: d0b0a51a4554e4b4ea4a181d8aefe026, type: 3}
+  m_PrefabInstance: {fileID: 8255583162689428547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2674366899298877044 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6308693855638725175, guid: d0b0a51a4554e4b4ea4a181d8aefe026, type: 3}
   m_PrefabInstance: {fileID: 8255583162689428547}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2674366899298877047 stripped
@@ -205,7 +218,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.96, y: 0.96}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -234,6 +247,7 @@ MonoBehaviour:
     m_Bits: 8
   attack_damage: 20
   attack_rate: 2
+  animator: {fileID: 2674366899298877044}
 --- !u!114 &815524516
 MonoBehaviour:
   m_ObjectHideFlags: 0

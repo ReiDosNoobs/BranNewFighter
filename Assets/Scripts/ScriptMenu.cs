@@ -18,7 +18,12 @@ public class ScriptMenu : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
-    
+
+    /*void OnClickCredits()
+    {
+        SceneManager.LoadScene("Creditos");
+    }*/
+
     void OnClickExitGame()
     {
         Application.Quit();

@@ -51,16 +51,16 @@ public class Mover : MonoBehaviour
 
     void PreventleavingScreen()
     {
-        if (transform.position.x <= -8.54f || transform.position.x >= 8.54f)
+        if (transform.position.x <= -5.5f || transform.position.x >= 43.5f)
         {
-            float xPos = Mathf.Clamp(transform.position.x, -8.54f, 8.54f);
+            float xPos = Mathf.Clamp(transform.position.x, -5.5f, 43.5f);
 
             transform.position = new Vector3(xPos, transform.position.y, transform.position.z);
         }
 
-        if (transform.position.y <= -4.5f || transform.position.y >= 4.5f)
+        if (transform.position.y <= -3.9f || transform.position.y >= -0.5f)
         {
-            float yPos = Mathf.Clamp(transform.position.y, -4.5f, 4.5f);
+            float yPos = Mathf.Clamp(transform.position.y, -3.9f, -0.5f);
 
             transform.position = new Vector3(transform.position.x, yPos, transform.position.z);
         }

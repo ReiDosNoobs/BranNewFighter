@@ -31,7 +31,7 @@ public class Inimigo : MonoBehaviour
 
         Debug.Log("hit");
 
-        //animator.SetTrigger("Hurt");
+        animator.SetTrigger("Hurt");
 
         if(current_hp <= 0)
         {
@@ -43,10 +43,16 @@ public class Inimigo : MonoBehaviour
     {
         Debug.Log("Morreu");
 
-        //animator.SetBool("IsDead", true);
+        animator.SetBool("IsDead", true);
 
-        GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+
+        Morreu();
+    }
+
+    void Morreu()
+    {
         Destroy(this.gameObject);
     }
 }

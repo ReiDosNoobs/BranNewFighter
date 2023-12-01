@@ -18,6 +18,8 @@ public class PlayerImput : MonoBehaviour
     public float attack_rate = 2f;
     float next_attack_time = 0f;
 
+    public Animator animator;
+
     private void Awake()
     {
         characterMovement = GetComponent<Mover>();
@@ -28,7 +30,15 @@ public class PlayerImput : MonoBehaviour
         horizontal_move = Input.GetAxis("Horizontal");
         vertical_move = Input.GetAxis("Vertical");
         
-        if(Time.time >= next_attack_time)
+        if (horizontal_move > 0 || vertical_move > 0)
+        {
+            animator.SetBool("Walking", true);
+        } else
+        {
+            animator.SetBool("Walking", false);
+        }
+
+        if (Time.time >= next_attack_time)
         {
             if (Input.GetKeyDown("j"))
             {
@@ -48,7 +58,7 @@ public class PlayerImput : MonoBehaviour
     void Attack()
     {
         // animacao de ataque
-        //animator.SetTrigger("Attack");
+        animator.SetTrigger("Attack");
 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         
